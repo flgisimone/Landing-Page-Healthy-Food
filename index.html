@@ -51,9 +51,10 @@
                         <button class="btnMenu"><a href="">Scopri i Menu</a></button>
                         <div class="btnVideo">
                             <button class="btnPlay">
-                                <a href="" class="linkBtnPlay">
+                                <div class="linkBtnPlay">
                                     <i class="fa-solid fa-play"></i>
-                                    <a href=""><span>Guarda il video</span></a></a>
+                                    <span>Guarda il video</span>
+                                </div>
                                 </button>
                         </div>
                     </div>
@@ -272,6 +273,20 @@
         </footer>
         <div class="developer">
             <p>Made with ❤️ by Giulio Simone Floresta</p>
+        </div>
+        <div class="containerModal">
+            <div class="modalVideo">
+                
+                <video autoplay controls>
+                    <source src="https://www.youtube.com/watch?v=7X8II6J-6mU" type="video/mp4">
+                    <source src="https://www.youtube.com/watch?v=7X8II6J-6mU" type="video/ogg">
+                  Your browser does not support the video tag.
+                  </video>
+                  <button class="btnCloseVideo">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </button>
+            </div>
+            
         </div>
     <script src="./script.js" type="module"></script>
 </body>

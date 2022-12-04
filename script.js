@@ -105,3 +105,22 @@ btnRight.addEventListener("click", (e) => {
     e.preventDefault()
     plusSlides(1);
 });
+
+// --------------------- MODALE VIDEO --------------------- //
+
+const btnPlay = document.querySelector(".btnPlay")
+const containerModal = document.querySelector(".containerModal")
+const modalVideo = document.querySelector(".modalVideo")
+const btnCloseVideo = document.querySelector(".btnCloseVideo")
+
+btnPlay.addEventListener("click", (e) => {
+    e.preventDefault()
+    modalVideo.style = "display:flex"
+    containerModal.style = "display:block"
+})
+
+btnCloseVideo.addEventListener("click", (e) => {
+    e.preventDefault()
+    modalVideo.style = "display:none"
+    containerModal.style = "display:none"
+})

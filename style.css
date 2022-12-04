@@ -5,6 +5,11 @@
     font-family: "Asap", sans-serif;
 }
 
+body{
+    height: 100vh;
+    position: relative;
+}
+
 a{
     text-decoration: none;
     cursor: pointer;
@@ -133,6 +138,14 @@ h2{
     background-color: transparent;
     border: none;
     font-size: 23px;
+    cursor: pointer;
+}
+
+.btnPlay .linkBtnPlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .btnPlay .linkBtnPlay i{
@@ -142,6 +155,13 @@ h2{
     border-radius: 50%;
     border: 2px solid #bd92fb;
     font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnPlay .linkBtnPlay span{
+    color: white;
 }
 
 .imgHero{
@@ -737,6 +757,45 @@ footer{
     padding: 20px 0;
 }
 
+.containerModal{
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    padding: 100%;
+    background-color: rgba(0, 0, 0, 0.562);
+}
+
+.modalVideo{
+    position: fixed;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    gap: 10px;
+}
+
+.modalVideo video{
+    width: 320px;
+    height: 220px;
+}
+
+.btnCloseVideo{
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    align-self: baseline;
+}
+
+.btnCloseVideo i{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
 @media screen and (min-width: 768px) {
 
     .containerMenu {
@@ -821,7 +880,8 @@ footer{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        gap: 100px;
+        flex-wrap: wrap;
+        gap: 50px;
     }
 
     .programContainer{
@@ -991,7 +1051,20 @@ footer{
         width: 75%;;
         flex-direction: row;
         justify-content: space-between;
-        display: flex;
-        
+        display: flex;   
+    }
+
+    .modalVideo video{
+        width: 500px;
+        height: 400px;
+    }
+
+    .btnCloseVideo i{
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
     }
 }
+
+
+
